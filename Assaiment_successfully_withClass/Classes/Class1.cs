@@ -6,7 +6,7 @@ namespace Assaiment_successfully_withClass.Classes
 {
     internal class Class1
     {
-        public void printResult(string input) 
+        public Dictionary<char, int> printResult(string input) 
         {
             string str = input;
 
@@ -24,10 +24,7 @@ namespace Assaiment_successfully_withClass.Classes
                 }
             }
 
-            foreach (var item in dic)
-            {
-                Console.WriteLine($" {item.Key} :  {item.Value} ");
-            }
+            return dic;
         }
     }
 

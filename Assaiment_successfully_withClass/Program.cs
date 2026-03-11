@@ -4,4 +4,10 @@ string str = Console.ReadLine();
 
 Class1 user =  new Class1();
 
-user.printResult(str);
+Dictionary<char, int> dic = user.printResult(str);
+
+
+foreach (var item in dic)
+{
+    Console.WriteLine($"{item.Key}  :  {item.Value}");
+}
